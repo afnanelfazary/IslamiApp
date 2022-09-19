@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#141A2E</color>
+    <color name="colorPrimaryVariant">#020A29</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="icon_color">#FACC1D</color>
+    <color name="title_color">#FFFFFFFF</color>
+    <color name="gold_yellow">#FACC1D</color>
+    <color name="white_black">#000000</color>
+    <color name="gold_blue">#FF151B30</color>
+
+
+</resources>

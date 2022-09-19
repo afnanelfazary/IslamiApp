@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B7935F</color>
+    <color name="colorPrimaryVariant">#9C7E53</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="icon_color">#FFFFFFFF</color>
+    <color name="title_color">#242424</color>
+    <color name="gold_yellow">#B7935F</color>
+    <color name="white_black">#FFFFFFFF</color>
+    <color name="gold_blue">#FFC8B396</color>
+
+</resources>
