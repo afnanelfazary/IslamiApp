@@ -8,5 +8,7 @@
     <color name="gold_yellow">#B7935F</color>
     <color name="white_black">#FFFFFFFF</color>
     <color name="gold_blue">#FFC8B396</color>
+    <color name="transparent_color">#00C8B396</color>
+    <color name="white_blue">#FFFFFFFF</color>
 
 </resources>

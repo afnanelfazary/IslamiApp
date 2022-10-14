@@ -7,10 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.afnanelfazary.islamiapp.Constants
 import com.afnanelfazary.islamiapp.R
-import com.afnanelfazary.islamiapp.SuraDetailsActivity
 import com.afnanelfazary.islamiapp.databinding.FragmentQuranBinding
 import com.afnanelfazary.islamiapp.home.quran.adapter.SuraNamesAdapter
+import com.afnanelfazary.islamiapp.suradetails.SuraDetailsActivity
 
 
 class QuranFragment : Fragment() {
@@ -270,11 +271,21 @@ class QuranFragment : Fragment() {
         adapter = SuraNamesAdapter(suraNames, aiatNumbers)
         adapter.onItemClickListener = object : SuraNamesAdapter.OnItemClickListener {
             override fun onItemClick(pos: Int, suraitems: String, aiatitems: String) {
-                val intent = Intent(context, SuraDetailsActivity::class.java)
-                startActivity(intent)
+
+                showSuraDetails(pos, suraitems, aiatitems)
             }
 
         }
         recyclerView.adapter = adapter
+    }
+
+
+    fun showSuraDetails(pos: Int, suraname: String, aiatnum: String) {
+        val intent = Intent(context, SuraDetailsActivity::class.java)
+        intent.putExtra(Constants.EXTRA_SURA_NAME, suraname)
+        intent.putExtra(Constants.EXTRA_SURA_Position, pos)
+        intent.putExtra(Constants.EXTRA_AIAT_NUM, aiatnum)
+
+        startActivity(intent)
     }
 }

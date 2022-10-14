@@ -7,20 +7,23 @@
 
     <Button
         android:id="@+id/zekr_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/gold_yellow"
+        android:fontFamily="@font/notonastaliqurdu"
         android:layout_below="@id/spinner_sebha"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30sp"
         android:background="@drawable/btn_shape"
-        android:padding="12dp"
         android:text="سبحان الله"
+        android:textSize="30sp"
         android:textColor="@color/white_black"
-        android:textSize="25sp"
+        app:layout_constraintHeight_percent="0.1"
         android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/counter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tasbeh_number" />
+        app:layout_constraintWidth_percent="0.5" />
 
     <ImageView
         android:id="@+id/spinner_sebha"
@@ -34,17 +37,21 @@
         app:layout_constraintTop_toBottomOf="@id/include" />
 
     <TextView
-        android:id="@+id/tasbeh_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/counter"
+        android:layout_width="0dp"
         android:layout_marginTop="30dp"
-        android:background="@color/gold_blue"
-        android:padding="12dp"
-        android:text="30"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_recgtangle"
+        android:backgroundTint="@color/gold_blue"
+        android:fontFamily="@font/ahlanwasahlan"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="0"
+        android:textSize="33sp"
         android:textColor="@color/title_color"
-        android:textSize="25sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tasbehat_text" />
 
@@ -56,6 +63,7 @@
         android:text="عدد التسبيحات"
         android:textColor="@color/title_color"
         android:textSize="25sp"
+        android:fontFamily="@font/ahlanwasahlan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spinner_sebha" />

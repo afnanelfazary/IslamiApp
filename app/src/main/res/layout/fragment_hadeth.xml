@@ -23,8 +23,9 @@
         android:layout_height="wrap_content"
         android:text="الأحاديث "
         android:textColor="@color/title_color"
-        android:textSize="25sp"
+        android:fontFamily="@font/arslanwessam"
         android:textStyle="bold"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view1" />
@@ -52,5 +53,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        tools:listitem="@layout/item_hadeth" />
+        tools:listitem="@layout/item_hadeeth" />
 </androidx.constraintlayout.widget.ConstraintLayout>
