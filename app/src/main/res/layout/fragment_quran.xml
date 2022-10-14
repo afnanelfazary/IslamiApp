@@ -24,6 +24,8 @@
         android:text="أسم السورة"
         android:textColor="@color/title_color"
         android:textSize="25sp"
+        android:fontFamily="@font/ahlanwasahlan"
+        android:paddingTop="8dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view1" />
@@ -36,6 +38,8 @@
         android:text="عدد الايات"
         android:textColor="@color/title_color"
         android:textSize="25sp"
+        android:fontFamily="@font/ahlanwasahlan"
+        android:paddingTop="8dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/view"
         app:layout_constraintStart_toStartOf="parent"

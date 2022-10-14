@@ -10,7 +10,8 @@ import com.afnanelfazary.islamiapp.databinding.FragmentTasbehBinding
 
 class TasbehFragment : Fragment() {
     private lateinit var fragbinding: FragmentTasbehBinding
-
+    var count = 0
+    var generalCounter = 0
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,6 +27,28 @@ class TasbehFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         fragbinding.zekrButton.setOnClickListener {
+            fragbinding.spinnerSebha.animate().rotation(360f).setDuration(20500).start()
+            count++
+            generalCounter++
+            if (generalCounter == 4) {
+                // count=0
+                fragbinding.zekrButton.setText("الحمد لله")
+            } else if (generalCounter == 7) {
+
+                fragbinding.zekrButton.setText("لا إاله إالا الله ")
+            } else if (generalCounter == 10) {
+
+                fragbinding.zekrButton.setText("الله أكبر")
+            } else if (generalCounter == 13) {
+
+                fragbinding.zekrButton.setText("لا حول ولا قوة إلا بالله")
+            }
+            fragbinding.counter.setText(count.toString())
+
+        }
+
+
+        fragbinding.counter.setOnClickListener {
 //            val rotate = RotateAnimation(
 //                0F,
 //                10F,
@@ -38,7 +61,6 @@ class TasbehFragment : Fragment() {
 //            rotate.interpolator = LinearInterpolator()
 //            fragbinding.spinnerSebha.startAnimation(rotate)
 
-            fragbinding.spinnerSebha.animate().rotation(360f).setDuration(5000).start()
 
         }
     }
