@@ -11,7 +11,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-
+        <item name="android:homeAsUpIndicator">@color/colorPrimary</item>
 
     </style>
 
@@ -19,4 +19,13 @@
         <item name="android:src">@drawable/spinner_sebha</item>
 
     </style>
+
+    <style name="Theme.IslamiApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.IslamiApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.IslamiApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
